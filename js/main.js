@@ -4,6 +4,7 @@ let grass = document.getElementById("grass");
 //เช็ค Browser
 var ua = navigator.userAgent.toLowerCase();
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  alert('is a Mobile');
 } else {
   if (ua.indexOf("safari") != -1) {
     if (ua.indexOf("chrome") > -1) {
