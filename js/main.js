@@ -1,11 +1,17 @@
 //ประกาศ Let
 let tree = document.getElementById("tree");
 let grass = document.getElementById("grass");
+var isMobile = /Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent);
 //เช็ค Browser
-var ua = navigator.userAgent.toLowerCase();
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  alert('is a Mobile');
-} else {
+window.desktopcheck = function () {
+  var check = false;
+  if (window.innerWidth > 768) {
+    check = true;
+  }
+  return check;
+};
+var ua = navigator.userAgent;
+if (window.desktopcheck()) {
   if (ua.indexOf("safari") != -1) {
     if (ua.indexOf("chrome") > -1) {
     } else {
@@ -15,6 +21,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
       window.location.href = "https://www.google.com"; // Safari
     }
   }
+} else {
+  alert("modile");
 }
 //Dynamic Header Scroll Event Listener
 window.addEventListener("scroll", function () {
