@@ -43,7 +43,7 @@ document.getElementById("musicbtn").onclick = function musicplayer() {
 };
 //Set Volume
 let music = document.getElementById("music");
-music.volume = 0.05;
+music.volume = 0.1;
 
 document.getElementById("suggestBtn").onclick = function suggestBtn() {
   let sugest = document.getElementById("music-player");
