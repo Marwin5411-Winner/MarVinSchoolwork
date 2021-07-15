@@ -3,13 +3,16 @@ let tree = document.getElementById("tree");
 let grass = document.getElementById("grass");
 //เช็ค Browser
 var ua = navigator.userAgent.toLowerCase();
-if (ua.indexOf("safari") != -1) {
-  if (ua.indexOf("chrome") > -1) {
-  } else {
-    alert(
-      "ต้องใช้ Microsoft Edge และ Google Chrome ในการเปิดเท่านั้นไม่สามารถใช้ Safari ได้ เพื่อใช้ฟีเจอร์ได้ครบคันครับ! จากมาร์วิน"
-    );
-    window.location.href = "https://www.google.com"; // Safari
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+} else {
+  if (ua.indexOf("safari") != -1) {
+    if (ua.indexOf("chrome") > -1) {
+    } else {
+      alert(
+        "ต้องใช้ Microsoft Edge และ Google Chrome ในการเปิดเท่านั้นไม่สามารถใช้ Safari ได้ เพื่อใช้ฟีเจอร์ได้ครบคันครับ! จากมาร์วิน"
+      );
+      window.location.href = "https://www.google.com"; // Safari
+    }
   }
 }
 //Dynamic Header Scroll Event Listener
@@ -34,13 +37,13 @@ let music = document.getElementById("music");
 music.volume = 0.05;
 
 document.getElementById("suggestBtn").onclick = function suggestBtn() {
-    let sugest = document.getElementById("music-player");
-    let suggestBtn = document.getElementById('suggestBtn');
-    let music = document.getElementById('music');
-    if (sugest.style.display === "none") {
-      sugest.style.display = "block";
-    } else {
-      sugest.style.display = "none";
-      music.style.display = "none";
-    }
-  };
+  let sugest = document.getElementById("music-player");
+  let suggestBtn = document.getElementById("suggestBtn");
+  let music = document.getElementById("music");
+  if (sugest.style.display === "none") {
+    sugest.style.display = "block";
+  } else {
+    sugest.style.display = "none";
+    music.style.display = "none";
+  }
+};
