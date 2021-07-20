@@ -4,7 +4,7 @@
           <img src="image/sea.png" id="sea" />
           <img src="image/tree.png" id="tree" />
           <h2 id="text">ริมน้ำจันทบูร</h2>
-          <a href="#sec" id="btn">Explore Chantaburi</a>
+          <a href="#sec" id="btn">Explore</a>
           <img src="image/bgbanner.png" id="grass" />
           <img src="image/gradient.png" id="gradient" />
         </section>
