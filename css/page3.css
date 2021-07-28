@@ -67,7 +67,7 @@ section::before {
   bottom: 0;
   width: 100%;
   height: 200px;
-  background: linear-gradient(to top, #61279e, transparent);
+  background: linear-gradient(to top, #044D29, transparent);
   z-index: 1000;
 }
 section img {
@@ -119,7 +119,7 @@ footer {
 .sec {
   position: relative;
   padding: 50px;
-  background: linear-gradient(to bottom, #61279e 0%, #94dfff 100%);
+  background: linear-gradient(to bottom, #044D29 0%, #168039 100%);
   z-index: 10;
 }
 .sec h2 {
@@ -137,18 +137,18 @@ footer {
 .sec h2,
 .sec2 h2,
 .sec3 h2 {
-  font-size: 2em;
+  font-size: 3.5em;
   margin-bottom: 10px;
   color: #fff;
 }
 .sec2 {
   display: flex;
-  background: linear-gradient(to bottom, #94dfff 0%, #1e528e 100%);
+  background: linear-gradient(to bottom, #168039 0%, #45BF55 100%);
   padding: 50px;
 }
 .sec3 {
   display: flex;
-  background: linear-gradient(to bottom, #1e528e 0%, #9da671 100%);
+  background: linear-gradient(to bottom, #45BF55 0%, #044D29 100%);
   padding: 50px;
 }
 .sec2 img,
@@ -158,7 +158,7 @@ footer {
   margin: 10px;
 }
 .video {
-  background: linear-gradient(to bottom, #9da671 0%, #8a4fb5 100%);
+  background: linear-gradient(to bottom, #044D29 0%, #00261C 100%);
   display: flex;
   justify-content: center;
 }
@@ -189,7 +189,7 @@ footer {
     border-radius: 50%;
 }
 .top10 {
-    background: linear-gradient(to bottom, #8a4fb5 0% , #eb8d80 100%);
+    background: linear-gradient(to bottom,#00261C 0%, #8a4fb5 50% , #eb8d80 100%);
     position: relative;
     padding: 50px;
 }
